@@ -60,3 +60,27 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+#デプロイ
+group :production do
+  gem 'unicorn', '5.4.1'
+end
+
+#全体
+gem 'haml-rails' #haml用
+
+#ユーザーサイド
+gem 'devise' #ユーザ登録
+gem 'recaptcha', require: "recaptcha/rails" #ロボットではありません
+
+#商品サイド
+gem 'jquery-rails' #スライドショー
+# gem "font-awesome-rails"
+gem 'font-awesome-sass' #アイコン 
+gem 'pry-rails' #binding.pry
+gem 'ancestry' #階層構造のテーブル作成の便利ツール
+gem 'rspec-rails'# テスト用
+gem 'rails-controller-testing'#テスト用
+gem 'factory_bot_rails'#データ用のデータを自動作成
+gem 'faker'#ダーミーデータをデータベースに入れるやつ(group :development, :test doへ移動)
+gem 'gretel'#パンくず機能実装用
+gem 'stripe'#APIメソッドを使用するため
