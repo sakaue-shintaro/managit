@@ -1,6 +1,4 @@
-%span#view_today
-:javascript
-  document.getElementById("view_today").innerHTML = getToday();
+document.getElementById("view_today").innerHTML = getToday();
   
   function getToday() {
   	var now = new Date();
@@ -15,17 +13,3 @@
   	var s = year + "年" + mon + "月" + day + "日 (" + youbi[you] + ")";
   	return s;
   }
-
-.wapper
-  = render  'header'
-  .main-space
-    .oneday-seler-btn
-      = link_to '単日売上入力', new_shop_path ,class:'seler-btn'
-    .total-saler-btn
-      集計
-    .ranking-btn
-      ランキング
-    .messages-btn
-      メッセージ
-  .topic
-    info

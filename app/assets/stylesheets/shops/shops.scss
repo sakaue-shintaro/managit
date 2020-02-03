@@ -1,0 +1,111 @@
+#view_today{
+  display: block;
+  font-family: 'Corben', cursive;
+  background-color:#f5f5f5 ;
+  margin-left: 20px;
+}
+.header{
+  height: 60px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: solid 0 0 0 2px #cccccc;
+  position: relative;
+  .logp{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    font-size:40px;
+    font-family: 'Corben', cursive;
+  }
+  .shop-name{
+    font-size:20px;
+    font-family: 'Corben', cursive;
+    position: absolute;
+    bottom: 0;
+    left: 1100px;
+  }
+}
+.main-space{
+  position: relative;
+  .oneday-seler-btn{
+    display: block;
+    height:220px;
+    width: 200px;
+    border-radius: 10%;
+    border: solid #cccccc;
+    background-color: #f5f5f5;
+    position: absolute;
+    top:50px;
+    left:100px;
+    line-height: 200px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 3px;
+    cursor: pointer;
+    .seler-btn{
+      text-decoration: none;
+      color:black;
+      display: block;
+    }
+  }
+  .total-saler-btn{
+    height:220px;
+    width: 200px;
+    border-radius: 10%;
+    border: solid #cccccc;
+    background-color: #f5f5f5;
+    position: absolute;
+    top:50px;
+    left:350px;
+    line-height: 200px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 3px;
+    cursor: pointer;
+  }
+  .ranking-btn{
+    height:220px;
+    width: 200px;
+    border-radius: 10%;
+    border: solid #cccccc;
+    background-color: #f5f5f5;
+    position: absolute;
+    top:300px;
+    left:100px;
+    line-height: 200px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 3px;
+    cursor: pointer;
+  }
+  .messages-btn{
+    height:220px;
+    width: 200px;
+    border-radius: 10%;
+    border: solid #cccccc;
+    background-color: #f5f5f5;
+    position: absolute;
+    top:300px;
+    left:350px;
+    line-height: 200px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 3px;
+    cursor: pointer;
+    display: block;
+  }
+  
+}
+.topic{
+  height:470px;
+  width: 600px;
+  border-radius: 10%;
+  border: solid #cccccc;
+  background-color: #f5f5f5;
+  position: absolute;
+  top:210px;
+  left:700px;
+  line-height: 400px;
+  font-size: 20px;
+  text-align: center;
+}
