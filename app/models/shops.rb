@@ -1,4 +1,4 @@
-class Shop < ApplicationRecord
+class Shops < ApplicationRecord
 - has_many :sales
 - has_many :messages
 - has_many :customers

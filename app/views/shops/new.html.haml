@@ -1,20 +1,24 @@
 = render 'header'
+.wapper
+  .input-date-text
+    ・日付
+  .input-seler
+    %input{type:"date",class:'date'}
 
-.input-date-text
-  日付
-.input-seler
-  %input{type:"date",class:'date'}
-
-.input-days
-  %div>
-    %label
-      %input{name:"days",type:"radio"}平日
-  %div>
-    %label
-      %input{name:"days",type:"radio"}休日
-  %div>
-    %label
-      %input{name:"days",type:"radio"}休前日
-  %div>
-    %label
-      %input{name:"days",type:"radio"}休後日
+  .input-days
+    %div>
+      %label
+        %input{name:"days",type:"radio"}平日
+    %div>
+      %label
+        %input{name:"days",type:"radio"}休日
+    %div>
+      %label
+        %input{name:"days",type:"radio"}休前日
+    %div>
+      %label
+        %input{name:"days",type:"radio"}休後日
+  .sale-form
+    = form_with Sales:@sales do |f|
+      %input type="number"
+    

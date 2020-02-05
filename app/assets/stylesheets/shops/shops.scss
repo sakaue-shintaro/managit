@@ -10,6 +10,7 @@
   padding: 20px;
   border: solid 0 0 0 2px #cccccc;
   position: relative;
+  box-shadow:  2px 2px 3px gray;
   .logp{
     position: absolute;
     bottom: 0;
@@ -40,7 +41,7 @@
     line-height: 200px;
     font-size: 20px;
     text-align: center;
-    box-shadow: 2px 2px 2px 3px;
+    box-shadow: 2px 2px 2px 3px grey;
     cursor: pointer;
     .seler-btn{
       text-decoration: none;
@@ -60,7 +61,7 @@
     line-height: 200px;
     font-size: 20px;
     text-align: center;
-    box-shadow: 2px 2px 2px 3px;
+    box-shadow: 2px 2px 2px 3px gray;
     cursor: pointer;
   }
   .ranking-btn{
@@ -75,7 +76,7 @@
     line-height: 200px;
     font-size: 20px;
     text-align: center;
-    box-shadow: 2px 2px 2px 3px;
+    box-shadow: 2px 2px 2px 3px gray;
     cursor: pointer;
   }
   .messages-btn{
@@ -90,7 +91,7 @@
     line-height: 200px;
     font-size: 20px;
     text-align: center;
-    box-shadow: 2px 2px 2px 3px;
+    box-shadow: 2px 2px 2px 3px gray;
     cursor: pointer;
     display: block;
   }
@@ -108,4 +109,5 @@
   line-height: 400px;
   font-size: 20px;
   text-align: center;
+  box-shadow: 2px 2px 2px 3px gray;
 }
