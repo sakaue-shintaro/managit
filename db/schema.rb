@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2020_02_04_010116) do
 
   create_table "customers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "date", null: false
-    t.integer "shop_id", null: false
+    t.bigint "shop_id", null: false
     t.integer "ten_oclock", null: false
     t.integer "eleven_oclock", null: false
     t.integer "twelve_oclock", null: false
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2020_02_04_010116) do
     t.integer "twenty_two_oclock", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["shop_id"], name: "index_customers_on_shop_id"
   end
 
   create_table "days", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -38,15 +39,16 @@ ActiveRecord::Schema.define(version: 2020_02_04_010116) do
   end
 
   create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "shop_id", null: false
+    t.bigint "shop_id", null: false
     t.text "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["shop_id"], name: "index_messages_on_shop_id"
   end
 
   create_table "sales", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "date", null: false
-    t.integer "shop_id", null: false
+    t.bigint "shop_id", null: false
     t.integer "ten_oclock", null: false
     t.integer "eleven_oclock", null: false
     t.integer "twelve_oclock", null: false
@@ -61,6 +63,7 @@ ActiveRecord::Schema.define(version: 2020_02_04_010116) do
     t.integer "twenty_two_oclock", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["shop_id"], name: "index_sales_on_shop_id"
   end
 
   create_table "shops", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -73,4 +76,7 @@ ActiveRecord::Schema.define(version: 2020_02_04_010116) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "customers", "shops"
+  add_foreign_key "messages", "shops"
+  add_foreign_key "sales", "shops"
 end

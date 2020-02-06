@@ -1,16 +1,17 @@
 class ShopsController < ApplicationController
-  before_action  :set_shops
+  # before_action  :set_shops
 
   def index
   end
 
   def new
-    @sales = Sales.new
+    @sales = Sale.new
+    @customers = Customer.new
   end
 
 
-private
-  def set_shops
-    @shops = Shops.find(params[:id])
-  end
+# private
+#   def set_shops
+#     @shops = Shop.find(params[:id])
+#   end
 end

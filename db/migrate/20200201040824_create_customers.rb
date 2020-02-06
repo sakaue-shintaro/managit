@@ -2,7 +2,7 @@ class CreateCustomers < ActiveRecord::Migration[5.2]
   def change
     create_table :customers do |t|
       t.datetime    :date,       null:false
-      t.integer  :shop_id,    null:false ,foreign_key:true
+      t.references  :shop,    null:false ,foreign_key:true
       t.integer     :ten_oclock, null:false
       t.integer     :eleven_oclock, null:false
       t.integer     :twelve_oclock, null:false

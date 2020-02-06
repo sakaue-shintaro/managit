@@ -10,4 +10,32 @@
   .input-days{
     display: flex;
   }
+  .form-text{
+    margin-top: 30px;
+    font-size:20px;
+  }
+  .times{
+    width: 940px;
+    display: flex;
+    justify-content:space-between;
+  }
+  .sale-forms{
+    width: 1200px;
+    display: flex;
+    justify-content:space-between;
+    .sale-form-right{
+      width: 40px;
+    }
+    .sale-form{
+      width: 40px;
+      margin-left: 19px;
+    }
+  }
+  .customer-form-right{
+    width: 40px;
+  }
+  .customer-form{
+    width: 40px;
+    margin-left: 19px;
+  }
 }

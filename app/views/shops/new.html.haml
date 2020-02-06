@@ -18,7 +18,33 @@
     %div>
       %label
         %input{name:"days",type:"radio"}休後日
-  .sale-form
+  .form-text
+    ・売上
+  .times
+    = render 'times'
+  .sale-forms
     = form_with Sales:@sales do |f|
-      %input type="number"
-    
+      %input{name:"time-sale", type:"number",class:"sale-form-right"}千円
+      %input{name:"time-sale", type:"number",class:"sale-form"}千円
+      %input{name:"time-sale", type:"number",class:"sale-form"}千円
+      %input{name:"time-sale", type:"number",class:"sale-form"}千円
+      %input{name:"time-sale", type:"number",class:"sale-form"}千円
+      %input{name:"time-sale", type:"number",class:"sale-form"}千円
+      %input{name:"time-sale", type:"number",class:"sale-form"}千円
+      %input{name:"time-sale", type:"number",class:"sale-form"}千円
+      %input{name:"time-sale", type:"number",class:"sale-form"}千円
+      %input{name:"time-sale", type:"number",class:"sale-form"}千円
+  .customers-forms
+    = form_with customers:@customers do |f|
+      %input{name:"time-customer", type:"number",class:"customer-form-right"}名様
+      %input{name:"time-customer", type:"number",class:"customer-form"}名様
+      %input{name:"time-customer", type:"number",class:"customer-form"}名様
+      %input{name:"time-customer", type:"number",class:"customer-form"}名様
+      %input{name:"time-customer", type:"number",class:"customer-form"}名様
+      %input{name:"time-customer", type:"number",class:"customer-form"}名様
+      %input{name:"time-customer", type:"number",class:"customer-form"}名様
+      %input{name:"time-customer", type:"number",class:"customer-form"}名様
+      %input{name:"time-customer", type:"number",class:"customer-form"}名様
+      %input{name:"time-customer", type:"number",class:"customer-form"}名様
+      .subumit-btn
+        = f.submit root_path
