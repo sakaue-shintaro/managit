@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: managit_production
-  username: managit
-  password: <%= ENV['MANAGIT_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock['MANAGIT_DATABASE_PASSWORD'] %>
