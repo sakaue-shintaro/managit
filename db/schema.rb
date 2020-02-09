@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2020_02_04_010116) do
   create_table "sales", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "date", null: false
     t.bigint "shop_id", null: false
+    t.string "days", null: false
     t.integer "ten_oclock", null: false
     t.integer "eleven_oclock", null: false
     t.integer "twelve_oclock", null: false

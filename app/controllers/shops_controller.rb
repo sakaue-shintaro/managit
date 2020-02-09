@@ -5,13 +5,22 @@ class ShopsController < ApplicationController
   end
 
   def new
-    @sales = Sale.new
-    @customers = Customer.new
+    @sale = Shop.new
+  end
+
+  def create
+    Sale.create(shop_params)
+    binding.pry
+    redirect_to root_path
+  end
+
+  def show
   end
 
 
-# private
-#   def set_shops
-#     @shops = Shop.find(params[:id])
-#   end
+
+  private
+  def shop_params
+    params.require(:shop).permit(:id)
+  end
 end

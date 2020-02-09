@@ -1,50 +1,21 @@
 = render 'header'
 .wapperr
-  .input-date-text
-    ・日付aaa
-  .input-seler
-    %input{type:"date",class:'date'}
-
-  .input-days
-    %div>
-      %label
-        %input{name:"days",type:"radio"}平日
-    %div>
-      %label
-        %input{name:"days",type:"radio"}休日
-    %div>
-      %label
-        %input{name:"days",type:"radio"}休前日
-    %div>
-      %label
-        %input{name:"days",type:"radio"}休後日
+  
   .form-text
     ・売上
   .times
     = render 'times'
   .sale-forms
-    = form_with Sales:@sales do |f|
-      %input{name:"time-sale", type:"number",class:"sale-form-right"}千円
-      %input{name:"time-sale", type:"number",class:"sale-form"}千円
-      %input{name:"time-sale", type:"number",class:"sale-form"}千円
-      %input{name:"time-sale", type:"number",class:"sale-form"}千円
-      %input{name:"time-sale", type:"number",class:"sale-form"}千円
-      %input{name:"time-sale", type:"number",class:"sale-form"}千円
-      %input{name:"time-sale", type:"number",class:"sale-form"}千円
-      %input{name:"time-sale", type:"number",class:"sale-form"}千円
-      %input{name:"time-sale", type:"number",class:"sale-form"}千円
-      %input{name:"time-sale", type:"number",class:"sale-form"}千円
-  .customers-forms
-    = form_with customers:@customers do |f|
-      %input{name:"time-customer", type:"number",class:"customer-form-right"}名様
-      %input{name:"time-customer", type:"number",class:"customer-form"}名様
-      %input{name:"time-customer", type:"number",class:"customer-form"}名様
-      %input{name:"time-customer", type:"number",class:"customer-form"}名様
-      %input{name:"time-customer", type:"number",class:"customer-form"}名様
-      %input{name:"time-customer", type:"number",class:"customer-form"}名様
-      %input{name:"time-customer", type:"number",class:"customer-form"}名様
-      %input{name:"time-customer", type:"number",class:"customer-form"}名様
-      %input{name:"time-customer", type:"number",class:"customer-form"}名様
-      %input{name:"time-customer", type:"number",class:"customer-form"}名様
-      .subumit-btn
-        = f.submit root_path
+    = form_with model: @sale, local: true do |f|
+      =f.text_field :ten_oclock
+      =f.text_field :eleven_oclock
+      =f.text_field :twelve_oclock
+      =f.text_field :thir_teen_oclock
+      =f.text_field :four_teen_oclock
+      =f.text_field :seven_teen_oclock
+      =f.text_field :eigh_teen_oclock
+      =f.text_field :nine_teen_oclock
+      =f.text_field :twenty_oclock
+      =f.text_field :twenty_one_oclock
+      =f.text_field :twenty_two_oclock
+      =f.submit '送信する'
