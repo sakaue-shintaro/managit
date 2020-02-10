@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :shops do
   end
 
-  resources :sales,only:[:new,:create] do
+  resources :sales do
   end
   
 end
