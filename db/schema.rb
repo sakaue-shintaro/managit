@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_04_010116) do
+ActiveRecord::Schema.define(version: 2020_02_01_040831) do
 
   create_table "customers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "date", null: false
@@ -32,12 +32,6 @@ ActiveRecord::Schema.define(version: 2020_02_04_010116) do
     t.index ["shop_id"], name: "index_customers_on_shop_id"
   end
 
-  create_table "days", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "days_of_weeks"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "shop_id", null: false
     t.text "message"
@@ -49,7 +43,7 @@ ActiveRecord::Schema.define(version: 2020_02_04_010116) do
   create_table "sales", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "date", null: false
     t.bigint "shop_id", null: false
-    t.string "days", null: false
+    t.string "days"
     t.integer "ten_oclock", null: false
     t.integer "eleven_oclock", null: false
     t.integer "twelve_oclock", null: false

@@ -1,9 +1,9 @@
 class CreateSales < ActiveRecord::Migration[5.2]
   def change
-    create_table:sales do |t|
+    create_table :sales do |t|
       t.datetime    :date,       null:false
       t.references  :shop,    null:false ,foreign_key:true
-      t.string      :days,    null:false
+      t.string      :days
       t.integer     :ten_oclock, null:false
       t.integer     :eleven_oclock, null:false
       t.integer     :twelve_oclock, null:false
