@@ -8,7 +8,7 @@
   .sale-forms
     = form_with model: @sale, local: true do |f|
       =f.date_field :date,class:'time'
-      =f.number_field :shop,class:'shop_id'
+      =f.number_field :shop_id,class:'shop_id'
       =f.select     :day, ['平日','休前日','休日','休後日'],{prompt: "---"}, { class: "day" }
       =f.text_field :ten_oclock,class:'sale-form-right'
       =f.text_field :eleven_oclock,class:'sale-form'
