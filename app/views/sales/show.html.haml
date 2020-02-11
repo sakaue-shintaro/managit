@@ -1,0 +1,34 @@
+= render 'header'
+= render 'times'
+- @sales.each do |sale| 
+  .content
+    .shop-names
+      店名
+      .shop-name
+        大阪なんば
+    .total
+      .ten-oc
+        = sale.ten_oclock
+      .eleven-oc
+        = sale.eleven_oclock
+      .twelve
+        = sale.twelve_oclock
+      .thir-teen
+        = sale.thir_teen_oclock
+      .four-teen
+        = sale.four_teen_oclock
+      .fif-teen
+        = sale.fif_teen_oclock
+      .seven-teen
+        = sale.seven_teen_oclock
+      .eigh-teen
+        = sale.eigh_teen_oclock
+      .nine-teen
+        = sale.nine_teen_oclock
+      .twenty
+        = sale.twenty_oclock
+      .twenty-one
+        = sale.twenty_one_oclock
+      .twenty-two
+        = sale.twenty_two_oclock
+

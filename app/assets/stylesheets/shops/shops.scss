@@ -63,6 +63,11 @@
     text-align: center;
     box-shadow: 2px 2px 2px 3px gray;
     cursor: pointer;
+    .total-btn{
+    text-decoration: none;
+    color:black;
+    display: block;
+    }
   }
   .ranking-btn{
     height:220px;
@@ -95,6 +100,7 @@
     cursor: pointer;
     display: block;
   }
+  
   
 }
 .topic{

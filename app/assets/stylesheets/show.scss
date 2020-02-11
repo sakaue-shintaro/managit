@@ -1,0 +1,161 @@
+.times{
+  margin-top: 50px;
+  margin-left: 300px;
+  width: 1000px;
+  display: flex;
+  justify-content:space-between;
+  background-color: gray;
+  .ten{
+    border:solid 1px black;
+    width:100px;
+    text-align: center;
+  }
+  .eleven{
+    border:solid 1px black;
+    width:100px;
+    text-align: center;
+  }
+  .twelve{
+    border:solid 1px black;
+    width:100px;
+    text-align: center;
+  }
+  .thir-teen{
+    border:solid 1px black;
+    width:100px;
+    text-align: center;
+  }
+  .four-teen{
+    border:solid 1px black;
+    width:100px;
+    text-align: center;
+  }
+  .fif-teen{
+    border:solid 1px black;
+    width:100px;
+    text-align: center;
+  }
+  .seven-teen{
+    border:solid 1px black;
+    width:100px;
+    text-align: center;
+  }
+  .eigh-teen{
+    border:solid 1px black;
+    width:100px;
+    text-align: center;
+  }
+  .nine-teen{
+    border:solid 1px black;
+    width:100px;
+    text-align: center;
+  }
+  .twenty-teen{
+    border:solid 1px black;
+    width:100px;
+    text-align: center;
+  }
+  .twenty-one{
+    border:solid 1px black;
+    width:100px;
+    text-align: center;
+  }
+  .twenty-two{
+    border:solid 1px black;
+    width:100px;
+    text-align: center;
+  }
+}
+.content{
+  padding-left:300px;
+  position: relative;
+  .shop-names{
+    border:solid 1px black;
+    text-align: center;
+    width:100px;
+    background-color: gray;
+    position: absolute;
+    left:198px;
+    top:-26px;
+    .shop-name{
+      background-color: #fff;
+      border-top:solid 1px black;
+    }
+  }
+  .total{
+    display: flex;
+    .ten-oc{
+      border-left:solid 1px black  ;
+      border-right:solid 1px black  ;
+      border-bottom:solid 1px black  ;
+      text-align: center;
+      width:81px;
+    }
+    .eleven-oc{
+      border-right:solid 1px black  ;
+      border-bottom:solid 1px black  ;
+      text-align: center;
+      width:83px; 
+    }
+    .twelve{
+      border-right:solid 1px black  ;
+      border-bottom:solid 1px black  ;
+      text-align: center;
+      width:83px; 
+    }
+    .thir-teen{
+      border-right:solid 1px black  ;
+      border-bottom:solid 1px black  ;
+      text-align: center;
+      width:83px; 
+    }
+    .four-teen{
+      border-right:solid 1px black  ;
+      border-bottom:solid 1px black  ;
+      text-align: center;
+      width:83px; 
+    }
+    .fif-teen{
+      border-right:solid 1px black  ;
+      border-bottom:solid 1px black  ;
+      text-align: center;
+      width:81px; 
+    }
+    .seven-teen{
+      border-right:solid 1px black  ;
+      border-bottom:solid 1px black  ;
+      text-align: center;
+      width:81px; 
+    }
+    .eigh-teen{
+      border-right:solid 1px black  ;
+      border-bottom:solid 1px black  ;
+      text-align: center;
+      width:83px; 
+    }
+    .nine-teen{
+      border-right:solid 1px black  ;
+      border-bottom:solid 1px black  ;
+      text-align: center;
+      width:83px; 
+    }
+    .twenty{
+      border-right:solid 1px black  ;
+      border-bottom:solid 1px black  ;
+      text-align: center;
+      width:81px; 
+    }
+    .twenty-one{
+      border-right:solid 1px black  ;
+      border-bottom:solid 1px black  ;
+      text-align: center;
+      width:83px; 
+    }
+    .twenty-two{
+      border-right:solid 1px black  ;
+      border-bottom:solid 1px black  ;
+      text-align: center;
+      width:83px; 
+    }
+  }
+}

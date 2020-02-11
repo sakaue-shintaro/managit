@@ -14,7 +14,8 @@ class SalesController < ApplicationController
   end
 
   def show
-    @sale = Sale.all
+    @sales = Sale.all
+    
   end
 private
   def sale_params
