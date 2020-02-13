@@ -15,7 +15,7 @@ class SalesController < ApplicationController
 
   def show
     @sales = Sale.all
-    
+    @shop = Shop.find(id:@sales.shop_id)
   end
 private
   def sale_params
