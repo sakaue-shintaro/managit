@@ -11,12 +11,14 @@
   border: solid 0 0 0 2px #cccccc;
   position: relative;
   box-shadow:  2px 2px 3px gray;
-  .logp{
+  .logo{
     position: absolute;
     bottom: 0;
     display: block;
     font-size:40px;
     font-family: 'Corben', cursive;
+    text-decoration: none;
+    color: black;
   }
   .shop-name{
     font-size:20px;

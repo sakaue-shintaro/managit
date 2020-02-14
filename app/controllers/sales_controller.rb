@@ -1,5 +1,5 @@
 class SalesController < ApplicationController
-  before_action :set_sale, except: [:new,:create,:show]
+  before_action :set_sale, except: [:new,:create,:show,:nanba]
 
 
   def new
@@ -12,10 +12,13 @@ class SalesController < ApplicationController
     @sale.save!
     redirect_to root_path
   end
-
   def show
     @sales = Sale.all
-    @shop = Shop.find(id:@sales.shop_id)
+  end
+
+  def nanba
+    @sales = Sale.where(shop_id:1)
+    @shop = Shop.where(id:1)
   end
 private
   def sale_params

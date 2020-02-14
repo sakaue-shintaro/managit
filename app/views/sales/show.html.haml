@@ -1,34 +1,5 @@
 = render 'header'
 = render 'time'
-- @sales.each do |sale| 
-  .content
-    .shop-names
-      = @shop.shop_name
-      .shop-name
-        大阪なんば
-    .total
-      .ten-oc
-        = sale.ten_oclock
-      .eleven-oc
-        = sale.eleven_oclock
-      .twelve
-        = sale.twelve_oclock
-      .thir-teen
-        = sale.thir_teen_oclock
-      .four-teen
-        = sale.four_teen_oclock
-      .fif-teen
-        = sale.fif_teen_oclock
-      .seven-teen
-        = sale.seven_teen_oclock
-      .eigh-teen
-        = sale.eigh_teen_oclock
-      .nine-teen
-        = sale.nine_teen_oclock
-      .twenty
-        = sale.twenty_oclock
-      .twenty-one
-        = sale.twenty_one_oclock
-      .twenty-two
-        = sale.twenty_two_oclock
+
+= link_to 'なんば店' ,nanba_sales_path
 

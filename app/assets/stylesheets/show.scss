@@ -5,6 +5,19 @@
   display: flex;
   justify-content:space-between;
   background-color: gray;
+  .shop-names{
+    border:solid 1px black;
+    text-align: center;
+    width:100px;
+    background-color: gray;
+    position: absolute;
+    left:198px;
+    top:-26px;
+    .shop-name{
+      background-color: #fff;
+      border-top:solid 1px black;
+    }
+  }
   .ten-sub{
     border:solid 1px black;
     width:100px;
@@ -69,19 +82,7 @@
 .content{
   padding-left:300px;
   position: relative;
-  .shop-names{
-    border:solid 1px black;
-    text-align: center;
-    width:100px;
-    background-color: gray;
-    position: absolute;
-    left:198px;
-    top:-26px;
-    .shop-name{
-      background-color: #fff;
-      border-top:solid 1px black;
-    }
-  }
+  
   .total{
     display: flex;
     .ten-oc{

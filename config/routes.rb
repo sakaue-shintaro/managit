@@ -5,6 +5,18 @@ Rails.application.routes.draw do
   end
 
   resources :sales do
+    collection do
+      get :nanba
+      get :kumatori
+      get :kaizuka
+      get :hannan
+      get :sakia
+      get :umeda
+      get :izumihuchu
+      get :nishikujyo
+      get :tennouji
+      get :ootori
+    end
   end
   
 end
