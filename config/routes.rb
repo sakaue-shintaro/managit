@@ -10,7 +10,7 @@ Rails.application.routes.draw do
       get :kumatori
       get :kaizuka
       get :hannan
-      get :sakia
+      get :sakai
       get :umeda
       get :izumihuchu
       get :nishikujyo
