@@ -1,21 +1,21 @@
 = render 'header'
 .wapperr
-  
-  .form-text
-    ・売上
-  .times
-    = render 'times'
-  .sale-forms
-    = form_with model: @sale, local: true do |f|
-      =f.text_field :ten_oclock
-      =f.text_field :eleven_oclock
-      =f.text_field :twelve_oclock
-      =f.text_field :thir_teen_oclock
-      =f.text_field :four_teen_oclock
-      =f.text_field :seven_teen_oclock
-      =f.text_field :eigh_teen_oclock
-      =f.text_field :nine_teen_oclock
-      =f.text_field :twenty_oclock
-      =f.text_field :twenty_one_oclock
-      =f.text_field :twenty_two_oclock
-      =f.submit '送信する'
+  .texts
+    .name-text
+      = '店舗名'
+    .password-text
+      = 'パスワード'
+    .address-text
+      = '住所'
+    .phonenumber-text
+      = '電話番号'
+    .manager-text
+      = '店長名' 
+  .shop-form
+    = form_with model: @shop, local: true do |f|
+      =f.text_field :name,class:'name'
+      =f.password_field :password,class:'password'
+      =f.text_area :address,class:'address'
+      =f.telephone_field :phonenumber,class:'phonenumber'
+      =f.text_field :manager,class:'manager'
+      =f.submit '登録',class:'register'

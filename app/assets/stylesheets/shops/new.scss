@@ -1,64 +1,57 @@
 .wapperr{
   padding: 50px 100px;
-  .input-date-text{
+  .texts{
     font-size:20px;
-  }
-  .input-seler{
-    margin: 0px 0px 30px 15px;
-    font-size: 20px;
-  }
-  .input-days{
-    display: flex;
-  }
-  .form-text{
-    margin-top: 30px;
-    font-size:20px;
-  }
-  .times{
-    margin-top: 50px;
-    width: 940px;
-    display: flex;
-    justify-content:space-between;
-  }
-  .sale-forms{
-    width: 1200px;
-    display: flex;
-    justify-content:space-between;
-    position: relative;
-    .time{
-      position: absolute;
-      top:-110px;
+    margin-top: 10px;
+    .name-text{
+      margin-top: 10px;
     }
-    .shop_id{
+    .password-text{
+      margin-top: 10px;
+    }
+    .address-text{
+      margin-top: 10px;
+    }
+    .phonenumber-text{
+      margin-top: 40px;
+    }
+    .manager-text{
+      margin-top: 10px;
+    }
+  }
+  .shop-form{
+    position: relative;
+    .name{
+      position: absolute;
+      top:-220px;
+      left: 150px;
+    }
+    .password{
+      position: absolute;
+      top:-180px;
+      left: 150px;
+    }
+    .address{
+      position: absolute;
+      top:-140px;
+      left: 150px;
+    }
+    .phonenumber{
       position: absolute;
       top:-70px;
-
+      left: 150px;
     }
-    .sale-form-right{
-      width: 50px;
+    .manager{
+      position: absolute;
+      top:-30px;
+      left: 150px;
     }
-    .sale-form{
-      width: 50px;
-      margin-left: 22px;
+    .register{
+      position: absolute;
+      top: 30px;
+      left: 300px;
+      height: 10px;
+      width:100px;
     }
-  }
-  .customer-form-right{
-    width: 50px;
-  }
-  .customer-form{
-    width: 50px;
-    margin-left: 51px;
-  }
-  .day{
-    position: absolute;
-    top:-65px;
-    left:200px;
-  }
-  .submit{
-    width: 100px;
-    height: 70px;
-    position: absolute;
-    top:50px;
-    left: 0;
   }
 }

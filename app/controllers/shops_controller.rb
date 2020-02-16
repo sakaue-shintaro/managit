@@ -5,12 +5,11 @@ class ShopsController < ApplicationController
   end
 
   def new
-    @sale = Shop.new
+    @shop = Shop.new
   end
 
   def create
-    Sale.create(shop_params)
-    binding.pry
+    Shop.create(shop_params)
     redirect_to root_path
   end
 
@@ -21,6 +20,6 @@ class ShopsController < ApplicationController
 
   private
   def shop_params
-    params.require(:shop).permit(:id)
+    params.require(:shop).permit(:name,:password,:address,:phonenumber,:manager)
   end
 end
