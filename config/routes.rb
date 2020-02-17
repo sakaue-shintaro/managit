@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :shops do
   end
 
-  resources :sales do
+  resource :sales do
     collection do
       get :nanba
       get :kumatori
