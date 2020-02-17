@@ -13,12 +13,7 @@ class SalesController < ApplicationController
     redirect_to root_path
   end
   def show
-<<<<<<< Updated upstream
     @sales = Sale.all
-=======
-    @sales = Sale.a
-    
->>>>>>> Stashed changes
   end
 
   def nanba
