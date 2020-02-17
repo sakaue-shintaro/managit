@@ -7,8 +7,8 @@
     = render 'times'
   .sale-forms
     = form_with model: @sale, local: true do |f|
-      =f.date_field :date,class:'time',placeholder:'日付を選択して下さい'
-      =f.number_field :shop_id,class:'shop_id',placeholder:'店舗コードを入力'
+      =f.date_field :date,class:'date',placeholder:'日付を選択して下さい'
+      =f.number_field :shop_id,class:'shop-id',placeholder:'店舗コードを入力'
       =f.select     :day, ['平日','休前日','休日','休後日'],{prompt: "曜日区分を選択"}, { class: "day" }
       =f.text_field :ten_oclock,class:'sale-form-right',placeholder:'千円'
       =f.text_field :eleven_oclock,class:'sale-form',placeholder:'千円'
