@@ -1,11 +1,12 @@
 class ShopsController < ApplicationController
-  # before_action  :set_shops
+  # before_action  :shop_params
+  # before_action  :set_shop
 
   def index
   end
 
-  def new
-    @shop = Shop.new
+  def edit
+    @shop = Shop.all
   end
 
   def create
@@ -21,5 +22,9 @@ class ShopsController < ApplicationController
   private
   def shop_params
     params.require(:shop).permit(:name,:password,:address,:phonenumber,:manager)
+  end
+
+  def set_shop
+    @shop = Shop.find(params[:id])
   end
 end

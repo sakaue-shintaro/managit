@@ -32,15 +32,15 @@
   position: relative;
   .oneday-seler-btn{
     display: block;
-    height:220px;
-    width: 200px;
+    height:50px;
+    width: 400px;
     border-radius: 10%;
     border: solid #cccccc;
     background-color: #f5f5f5;
     position: absolute;
     top:50px;
     left:100px;
-    line-height: 200px;
+    line-height: 50px;
     font-size: 20px;
     text-align: center;
     box-shadow: 2px 2px 2px 3px grey;
@@ -52,15 +52,15 @@
     }
   }
   .total-saler-btn{
-    height:220px;
-    width: 200px;
+    height:50px;
+    width: 400px;
     border-radius: 10%;
     border: solid #cccccc;
     background-color: #f5f5f5;
     position: absolute;
-    top:50px;
-    left:350px;
-    line-height: 200px;
+    top:130px;
+    left:100px;
+    line-height: 50px;
     font-size: 20px;
     text-align: center;
     box-shadow: 2px 2px 2px 3px gray;
@@ -72,15 +72,15 @@
     }
   }
   .total-customer-btn{
-    height:220px;
-    width: 200px;
+    height:50px;
+    width: 400px;
     border-radius: 10%;
     border: solid #cccccc;
     background-color: #f5f5f5;
     position: absolute;
-    top:300px;
-    left:350px;
-    line-height: 200px;
+    top:210px;
+    left:100px;
+    line-height: 50px;
     font-size: 20px;
     text-align: center;
     box-shadow: 2px 2px 2px 3px gray;
@@ -92,15 +92,15 @@
     }
     }
   .customer-btn{
-    height:220px;
-    width: 200px;
+    height:50px;
+    width: 400px;
     border-radius: 10%;
     border: solid #cccccc;
     background-color: #f5f5f5;
     position: absolute;
-    top:300px;
+    top:290px;
     left:100px;
-    line-height: 200px;
+    line-height: 50px;
     font-size: 20px;
     text-align: center;
     box-shadow: 2px 2px 2px 3px gray;
@@ -111,25 +111,27 @@
       display: block;
     }
   }
-  .messages-btn{
-    height:220px;
-    width: 200px;
+  .edit-btn{
+    height:50px;
+    width: 400px;
     border-radius: 10%;
     border: solid #cccccc;
     background-color: #f5f5f5;
     position: absolute;
-    top:300px;
-    left:350px;
-    line-height: 200px;
+    top:500px;
+    left:100px;
+    line-height: 50px;
     font-size: 20px;
     text-align: center;
     box-shadow: 2px 2px 2px 3px gray;
     cursor: pointer;
     display: block;
+    text-decoration: none;
+    color:black;
+    display: block;
+    }
   }
-  
-  
-}
+
 .topic{
   height:470px;
   width: 600px;
