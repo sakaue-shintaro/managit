@@ -1,0 +1,32 @@
+= render 'header'
+= render 'time'
+- @customer.each do |customer| 
+  .content
+    .total
+      .date
+        = customer. date.strftime("%m月%d日")
+      .ten-oc
+        = customer.ten_oclock
+      .eleven-oc
+        = customer.eleven_oclock
+      .twelve
+        = customer.twelve_oclock
+      .thir-teen
+        = customer.thir_teen_oclock
+      .four-teen
+        = customer.four_teen_oclock
+      .fif-teen
+        = customer.fif_teen_oclock
+      .seven-teen
+        = customer.seven_teen_oclock
+      .eigh-teen
+        = customer.eigh_teen_oclock
+      .nine-teen
+        = customer.nine_teen_oclock
+      .twenty
+        = customer.twenty_oclock
+      .twenty-one
+        = customer.twenty_one_oclock
+      .twenty-two
+        = customer.twenty_two_oclock
+

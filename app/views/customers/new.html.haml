@@ -1,0 +1,25 @@
+= render 'header'
+.wapperr
+  
+  .form-text
+    ・客数
+  .timer
+    = render 'times'
+  .sale-forms
+    = form_with model: @customer, local: true do |f|
+      =f.date_field :date,class:'date',placeholder:'日付を選択して下さい'
+      =f.number_field :shop_id,class:'shop-id',placeholder:'店舗コードを入力'
+      =f.select     :day, ['平日','休前日','休日','休後日'],{prompt: "曜日区分を選択"}, { class: "day" }
+      =f.text_field :ten_oclock,class:'sale-form-right',placeholder:'名様'
+      =f.text_field :eleven_oclock,class:'sale-form',placeholder:'名様'
+      =f.text_field :twelve_oclock,class:'sale-form',placeholder:'名様'
+      =f.text_field :thir_teen_oclock,class:'sale-form',placeholder:'名様'
+      =f.text_field :four_teen_oclock,class:'sale-form',placeholder:'名様'
+      =f.text_field :fif_teen_oclock,class:'sale-form',placeholder:'名様'
+      =f.text_field :seven_teen_oclock,class:'sale-form',placeholder:'名様'
+      =f.text_field :eigh_teen_oclock,class:'sale-form',placeholder:'名様'
+      =f.text_field :nine_teen_oclock,class:'sale-form',placeholder:'名様'
+      =f.text_field :twenty_oclock,class:'sale-form',placeholder:'名様'
+      =f.text_field :twenty_one_oclock,class:'sale-form',placeholder:'名様'
+      =f.text_field :twenty_two_oclock,class:'sale-form',placeholder:'名様'
+      =f.submit '送信する',class:'submit'

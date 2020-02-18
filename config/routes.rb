@@ -3,6 +3,21 @@ Rails.application.routes.draw do
   root to: 'shops#index'
   resources :shops do
   end
+  resource :customers do
+    collection do
+      get :nanba
+      get :kumatori
+      get :kaizuka
+      get :hannan
+      get :sakai
+      get :umeda
+      get :izumihuchu
+      get :nishikujyo
+      get :tennouji
+      get :ootori
+    end
+  end
+
 
   resource :sales do
     collection do
